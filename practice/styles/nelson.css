@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(83, 36, 44);
+    color: white;
+}
+
+header{
+    text-align: center;
+}
+main h4{
+    color: rgb(158, 145, 145);
+    margin-left: 40%;
+    font-size: larger;
+}
+
+.prophet{
+   width: 10%;
+   height: 10%;
+}
+
+.quote{
+    text-align: center;
+    display: block;
+}
