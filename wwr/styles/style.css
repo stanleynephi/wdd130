@@ -125,6 +125,7 @@ h4{
 nav a:hover{
     background-color: #396E94;
     color: #f8f9fa;
+    height: 10px;
 }
 
 .book, .join{
