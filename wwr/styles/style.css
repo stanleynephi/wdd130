@@ -41,7 +41,8 @@ nav{
 }
 
 .logo{
-    border-radius: 50%;
+    border-radius: 90%;
+    margin-left: 18%;
 }
 
 #hero{
@@ -488,4 +489,9 @@ background: linear-gradient(144deg, rgba(248,249,250,1) 22%, rgba(169,235,248,1)
     background: linear-gradient(327deg, rgba(248,249,250,1) 30%, rgba(169,235,248,1) 100%);
     color:black;
     transform: rotateY(180deg);
+}
+
+#why-us{
+    margin: 10%;
+    text-shadow:10px 10px 15px #6f7364;
 }
