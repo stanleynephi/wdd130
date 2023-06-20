@@ -29,6 +29,7 @@ header{
 }
 
 nav{
+    padding-top: 20px;
     display: flex;
     justify-content: space-around
 }
@@ -41,6 +42,8 @@ nav{
 }
 
 .logo{
+    width: 100px;
+    height: 100px;
     border-radius: 90%;
     margin-left: 18%;
 }
@@ -60,7 +63,7 @@ nav{
 #hero-msg{
 grid-column: 2/3;
 grid-row: 1/2;
-margin-top: 100px;
+margin-top: 40%;
 }
 
 #hero-msg h4{
