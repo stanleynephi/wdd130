@@ -302,6 +302,7 @@ footer .social img{
 /*Do an horizontal flip when you move the mouse over the flip box container*/
 .river-cards:hover .river-card-inner{
     transform: rotateY(180deg);
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 /* Position the front and back side */
