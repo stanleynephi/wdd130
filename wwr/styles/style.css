@@ -297,6 +297,7 @@ footer .social img{
     text-align: center;
     transition: transform 0.7s;
     transform-style: preserve-3d;
+    border-radius: 10px;
 }
 
 /*Do an horizontal flip when you move the mouse over the flip box container*/
@@ -605,7 +606,12 @@ button{
         margin-left: -29px;
     }
 
+    .location{
+        margin-top: -10%;
+    }
+
     .river-card-back{
+        height: 100%;
         font-size: 10px;
     }
 
@@ -618,6 +624,11 @@ button{
         margin-left: -20px;
         width: 100%;
         height: 90%;
+        transition: transform .2;
+    }
+
+    .testimony1:hover,.testimony2:hover,.testimony3:hover{
+        transform: scale(1.1);
     }
 
     .faq-card{
@@ -629,5 +640,9 @@ button{
         font-size: 20px;
         font-weight: 300;
         text-align: center;
+    }
+
+    .headings{
+        margin-top: 10px;
     }
 }
