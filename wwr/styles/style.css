@@ -618,7 +618,8 @@ button{
     }
 
     .faq-card-back{
-        font-size: smaller;
+        font-size: 20px;
+        font-weight: 300;
         text-align: center;
     }
 }
