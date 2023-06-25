@@ -605,6 +605,14 @@ button{
         margin-left: -29px;
     }
 
+    .river-card-back{
+        font-size: 10px;
+    }
+
+    .book-button{
+        margin-top: -10px;
+    }
+
     .testimony1,.testimony2,.testimony3{
         margin: 50px auto;
         margin-left: -20px;
