@@ -182,10 +182,11 @@ main section{
 }
 
 #background{
+    padding: 15% 5%;
     height: 725px;
     background-color: #00b4d8;
     grid-column: 1/11;
-    grid-row: 4/9;
+    grid-row: 4/8;
 }
 
 .msg{
@@ -193,7 +194,7 @@ main section{
     line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10;
-    grid-row: 6/7;
+    grid-row: 5/7;
 }
 
 .msg h2{
