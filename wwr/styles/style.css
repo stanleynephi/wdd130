@@ -559,7 +559,7 @@ button{
 
 
 @media screen and (max-width: 900px) {
-    #hero, .home-grid {
+    #hero, .home-grid,#rivers,#testimonies,#faq{
         display: block;
         height: auto;
     }
@@ -597,5 +597,28 @@ button{
     }
     footer {
         margin-top: 25px;
+    }
+
+    .river-1, .river-2, .river-3{
+        margin: 50px auto;
+        width: 100%;
+        margin-left: -29px;
+    }
+
+    .testimony1,.testimony2,.testimony3{
+        margin: 50px auto;
+        margin-left: -20px;
+        width: 100%;
+        height: 90%;
+    }
+
+    .faq-card{
+        margin: 50px auto;
+        width: 100%;
+    }
+
+    .faq-card-back{
+        font-size: smaller;
+        text-align: center;
     }
 }
