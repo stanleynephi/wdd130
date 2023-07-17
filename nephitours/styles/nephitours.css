@@ -289,3 +289,155 @@ h4{
     transform: scale(.9);
 }
 
+
+
+#contact{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    margin: 50px 40px;
+}
+
+.contact-img{
+    grid-column: 1/4;
+    padding: 50px auto;
+    margin: 10% 5%;
+}
+
+.book{
+    grid-column: 6/9;
+    width: 450px;
+    border-left: 2px solid #090a0b;
+    color: white;
+    padding: 20px 30px;
+    margin: 0px 20%;
+    border-radius: 20px 10px;
+    background-image: linear-gradient(to right top, #102710, #2d3e19, #515621, #7c6c2c, #ac803d);
+}
+
+.book h3{
+    text-align: center;
+    text-decoration: none;
+    margin-top: -5px;
+    margin-bottom: 10%;
+}
+
+.book label{
+    font-size: 15px;
+}
+
+.namemail{
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+
+.namemail input{
+    margin-right: 10px;
+    outline: 0px;
+    border-top: 0;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 3px solid black;
+    background-color: inherit;
+}
+
+.namemail input:active{
+    background-color: inherit;
+}
+
+.countrynumber{
+    margin-bottom: 30px;
+}
+
+.countrynumber select{
+    width: 80px;
+    text-align: center;
+    border:0;
+    border-bottom: 3px solid green;
+    margin-right: 20px;
+    background-color: inherit;
+}
+
+.countrynumber select option{
+    background-color: inherit;
+}
+
+.countrynumber input{
+    border: 0;
+    outline: 0;
+    border-bottom: 3px solid green;
+    margin-right: 30px;
+    background-color: inherit;
+}
+
+.countrydate{
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.countrydate input{
+    border: 0;
+    outline: 0;
+    border-bottom: 3px solid green;
+    margin-right: 20px;
+    background-color: inherit;
+}
+
+.tours{
+    margin-bottom: 20px;
+}
+
+.tours select{
+    width: 100px;
+    text-align: center;
+    border:0;
+    border-bottom: 3px solid green;
+    margin-right: 20px;
+    background-color: inherit;
+}
+
+.tours select:focus{
+    outline: 0;
+    background-color: inherit;
+}
+
+.tours input{
+    outline: 0;
+    width: 50px;
+    border: 0;
+    border-bottom: 3px solid green;
+    margin-right: 20px;
+    text-align: center;
+    background-color: inherit;
+}
+
+
+.submit-button{
+    border-radius: 20px;
+    width: 25%;
+    padding: 10px;
+    margin: 10px 40%;
+    letter-spacing: 2px;
+    background-color: #5ea4c4;
+    transition: transform .2s;
+}
+
+.submit-button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 3px 0 white;
+}
+
+.submit-button:active{
+    transform: scale(.9);
+}
+
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>nephitours</title>
+    <link rel="stylesheet" href="styles/nephitours.css">
 </head>
 <body>
     <div class="content">
@@ -19,34 +20,58 @@
                 <a href="contact.htm">Contact Us</a>
             </nav>
         </header>
+        <div id="feedback"></div>
         <main id="contact">
             <div class="contact-img">
-                <img src="images/resized/rsz_1close-up-portrait-attractive-young-woman-isolated.jpg" alt="contact us">
+                <img src="images/resized/rsz_rsz_1close-up-portrait-attractive-young-woman-isolated.jpg" alt="contact us" class="image1">
             </div>
 
-            <div class="contact-forms">
-                <form action="#" method="post">
-                    <ul>
-                        <li>
-                            <input type="text" id="name" name="user_name" placeholder="Name"/>
-                        </li>
-    
-                        <li>
-                            <input type="email" id="mail" name="user_email" placeholder="Email"/>
-                        </li>
-    
-                        <li>
-                            <textarea name="user_message" id="msg" placeholder="Message"></textarea>
-                        </li>
-                        
-                        <li>
-                            <button type="submit" class="submit-button">Send</button>
-                        </li>
-                    </ul>
+            <div class="book">
+                <form action="">
+                    <h3>Book your tour today!</h3>
+                    <div class="namemail">
+                        <label for="name"><b>Name:</b></label>
+                        <input type="text" placeholder="NAME" name="user" required>
+                        <label for="email">Email:</label>
+                        <input type="email" placeholder="abcdefg@example.com">
+                    </div>
+                    <div class="countrynumber">
+                        <label for="country">Country:</label>
+                        <select name="country" id="country">
+                            <option value="countryname">Ghana</option>
+                            <option value="countryname">USA</option>
+                            <option value="countryname">UK</option>
+                            <option value="countryname">Spain</option>
+                            <option value="countryname">Mexico</option>
+                        </select>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" placeholder="1234567890">
+                    </div>
+                    <div class="countrydate">
+                        <label for="departureDate">Departure Date:</label>
+                        <input type="date">
+                        <label for="return">Return Date:</label>
+                        <input type="date">
+                    </div>
+                    <div class="tours">
+                        <label for="visitingcountry">Visit:</label>
+                        <select name="visitingcountry" id="visit">
+                            <option value="visits">Spain</option>
+                            <option value="visit">Ghana</option>
+                            <option value="visit">Italy</option>
+                            <option value="visit">USA</option>
+                            <option value="visit">UK</option>
+                        </select>
+                        <label for="people">No. people:</label>
+                        <input type="text" name="people" id="people">
+                        </div>
+                    <div class="button">
+                        <button type="submit" class="submit-button" onclick="showAlert()">Submit</button>
+                    </div>
                 </form>
             </div>
         </main>
-        <footer>
+        <footer>    
             <p>Dry Oar &copy; 20XX - Your First and Last Name Here</p>
             <p><a href="site-plan-rafting.html">Site Plan</a></p>
             <p><a href="contactus.html">Contact Us</a></p>
@@ -63,6 +88,22 @@
             </div>
         </footer>
     </div>
-    
+
+    <script>
+        // get the feedback div element so we can do something with it.
+        const feedbackElement = document.getElementById('feedback');
+        // get the form so we can read what was entered in it.
+        const formElement = document.forms[0];
+        // add a 'listener' to wait for a submission of our form. When that happens run the code below.
+        formElement.addEventListener('submit', function(e) {
+        // stop the form from doing the default action.
+            e.preventDefault();
+            // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
+            feedbackElement.innerHTML = 'Hello '+ formElement.user.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            // make the feedback element visible.
+            feedbackElement.style.display = "block";
+            // add a class to move everything down so our message doesn't cover it.
+        });
+    </script>
 </body>
 </html>
